@@ -1,0 +1,56 @@
+*{
+    /* Include the padding and border in an element's total width and height */
+    box-sizing: border-box;
+}
+
+.header {
+    /* Style the header */
+    background-color: #2cfaa4;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+}
+
+
+ul {
+    /* Remove margins and padding from the list */
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    /* Style the list items */
+    cursor: pointer;
+    position:relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+
+}
+
+ul li:nth-child(odd) {
+    
+/* Set all odd list items to a different color (zebra-stripes) */
+    background: #f9f9f9;
+}
+
+ul li:hover {
+    /* Darker background-color on hover */
+    background:#ddd;
+}
+
+
+
+ul li.checked::before {
+    /* Add a "checked" mark when clicked on */
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px; 
+} 

@@ -1,0 +1,8 @@
+this is just for study purposes so there isn't much to see here...
+.header::after {
+    
+/* Clear floats after the header */ 
+    /* content: ""; */
+    /* display: table; */
+    /* clear: both; */
+} 
